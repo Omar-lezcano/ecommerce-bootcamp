@@ -1,27 +1,10 @@
-.main-nav {
-    background-color: rgb(19, 55, 153);
-    color: white;
-    height: 60px;
-    display: flex;
-    align-items: center; 
+@import "abstracts/variables";
 
+@import "base/reset";
+@import "base/typography";
 
-    .nav-links {
-        padding: 2rem;
+@import "components/card.scss";
 
-        .nav-items {
-            text-decoration: none;
-            color: white;
-            &.active {
-                color: cornflowerblue;
-                font-weight: bold;
-            }
-            &:hover {
-                font-size: 1.2rem;
-                color: darkred;
-            }
-        }
+@import "layout/header";
 
-    }
-
-}
+@import "pages/home";

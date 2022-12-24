@@ -35,10 +35,16 @@ body {
   gap: 0.5rem;
 }
 .footer__contact-icon {
-  font-size: 1, 75rem;
+  font-size: 1.75rem;
 }
 .footer__contact-icon--facebook {
   color: #0035bb;
+}
+.footer__contact-icon--instagram {
+  color: #f14d59;
+}
+.footer__contact-icon--linkedin {
+  color: #0077b6;
 }
 
 @media screen and (min-width: 600px) {

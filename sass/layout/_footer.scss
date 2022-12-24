@@ -18,10 +18,16 @@
         
     }
     &__contact-icon {
-        font-size: 1,75rem;
+        font-size: 1.75rem;
         &--facebook {
             color: #0035bb;
         }   
+        &--instagram {
+            color: #f14d59;
+        }
+        &--linkedin {
+            color:#0077b6 ;
+        }
     }
 
 }

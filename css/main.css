@@ -12,8 +12,58 @@ a {
   display: inline-block;
 }
 
+html {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
 body {
   font-family: "Inter", Arial, sans-serif;
+}
+
+.card {
+  margin: 1rem;
+  border: 1px solid red;
+}
+.card__header {
+  height: 120px;
+  background-color: orange;
+}
+.card__img {
+  height: 120px;
+}
+.card__body {
+  padding: 1rem;
+}
+.card__title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-bottom: 2px solid orangered;
+}
+.card__description {
+  padding: 1.5rem 0 2rem;
+}
+.card__price {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: rgb(6, 94, 25);
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.card__date {
+  color: dodgerblue;
+}
+.card__btn {
+  padding: 1rem 1.5rem;
+  background-color: dodgerblue;
+  color: white;
 }
 
 .header {
@@ -91,7 +141,7 @@ body {
   width: 100%;
   height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,7 +151,7 @@ body {
   padding: 1.25rem 1rem;
 }
 .navbar__nav-item:not(:last-child) {
-  border-bottom: 1px solid rgb(206, 199, 186);
+  border-bottom: 2px solid rgb(206, 199, 186);
 }
 .navbar__nav-link {
   color: #fff;
@@ -117,6 +167,10 @@ body {
 }
 .user-navbar__user-avatar {
   width: 40px;
+}
+.user-navbar__cart-icon-container {
+  color: orange;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -170,7 +224,31 @@ body {
   }
 }
 .main {
-  padding: 1.5rem;
-  background-color: aliceblue;
   margin-top: 50px;
+  padding: 1.5rem 0;
+  background-color: aliceblue;
+}
+
+.section-cards__header {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.section-cards__subtitle {
+  color: #444;
+  font-size: 1rem;
+}
+.section-cards__products-search-container {
+  padding: 1rem;
+  background-color: cornflowerblue;
+}
+.section-cards .cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media screen and (min-width: 1000px) {
+  .section-cards__header {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */

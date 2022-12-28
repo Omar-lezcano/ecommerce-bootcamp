@@ -81,7 +81,7 @@
         width: 100%;
         height: 0;
         overflow: hidden;
-        transition: all .3s ease-out;
+        transition: all .2s ease-out;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -91,7 +91,7 @@
         padding: 1.25rem 1rem;
 
         &:not(:last-child) {
-            border-bottom: 1px solid rgb(206, 199, 186);
+            border-bottom: 2px solid rgb(206, 199, 186);
         }
     }
     &__nav-link {
@@ -108,7 +108,10 @@
     padding: 0 1rem;
     &__user-avatar {
         width: 40px;
-        
+    }
+    &__cart-icon-container {
+        color: orange;
+        font-size: 1.5rem;
     }
 }
 

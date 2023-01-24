@@ -1,52 +1,137 @@
 .card {
     margin: 1rem;
-    border: 1px solid red;
+    border: 1px solid $color-bg-secondary;
+    box-shadow: 8px 5px 5px $color-bg-shadows;
+    border-radius: 15px;
+    height: 950px;
+    overflow: hidden;
     &__header {
-        height: 120px;
-        background-color: orange;
+        height: 350px;
+        background-color: $color-text-light;
+        overflow: hidden;
     }
 
     &__img {
-        height: 120px;
+        height: 350px;
+        object-fit:cover;
+        object-fit: contain;
+        /* height: auto; */
+        width: 100%;
+        max-width: 100%;
+    }
+
+    &__img:hover {
+        transform: scale(1.2);
+        transition: .5s ease-in-out;
     }
 
     &__body {
         padding: 1rem;
+        background-color: $color-text-light;
+        overflow: hidden;
     }
 
     &__title {
         font-weight: 500;
         font-size: 1.5rem;
-        border-bottom: 2px solid orangered;
+        border-bottom: 2px solid $color-bg-warning;
+        height: 6rem;
     }
 
     &__description {
         padding: 1.5rem 0 2rem;
-        
+        height: 300px;
+        overflow: auto;     
     }
 
     &__price {
         font-weight: 500;
         font-size: 1.5rem;
-        color: $color-bg-primary;
+        color: $color-bg-btn-container;
     }
 
     &__footer {
+        padding: 20px;
+    }
+
+    &__date {
+        color: $color-bg-btn-container; 
+    }
+
+    &__btn-container {
         display: flex;
         justify-content: space-between;
         padding: 1rem;
     }
-
-    &__date {
-        color: dodgerblue; 
-        // Definir una variable de color
+    &__more {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        border-top: 1px solid $color-bg-secondary;
     }
 
-    &__btn-container {}
-
-    &__btn {
+    &__btn-compra {
         padding: 1rem 1.5rem;
-        background-color: dodgerblue;
-        color: white;
+        background-color: $color-bg-danger;
+        color: $color-text-light;
+        border-radius: 15px;
+    }
+    &__btn-detalle {
+        padding: 1rem 1.5rem;
+        background-color: $color-bg-primary;
+        color: $color-text-light;
+        border-radius: 15px;
+    }
+
+    &__btn-compra:hover,&__btn-detalle:hover {
+        background-color: $color-bg-btn-container;
+        transition: .3s ease-in-out;
+    }
+}
+.card:hover {
+    box-shadow: 12px 10px 12px $color-bg-shadows;
+    transition: .3s ease-in-out;
+}
+
+.card__description::-webkit-scrollbar {
+    background-image: none;
+}
+/* ::-webkit-scrollbar-track {
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #e9e9e7 100%);
+    border-radius: 2rem;
+  } */
+// ::-webkit-scrollbar-thumb {
+//     background-image: black;
+//     border-radius: 2rem;
+// }
+
+@media screen and (max-width: 600px) {
+    .card {
+        height: 900px;
+    }
+    .card__body {
+        font-size: 1.25rem;
+    }
+    .card__btn-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .card__more {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card__btn-detalle, .card__btn-compra {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card__btn-detalle, .card__btn-compra {
+    margin: 0 5px;
     }
 }

@@ -11,11 +11,11 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="/index.html" class="navbar__nav-link">
-                <img class="navbar__logo" src="/assets/images/Argentina.png" alt="logo del Ecommerce">
+            <a href="/index.html">
+                <img class="navbar__logo" src="/assets/images/logo.png" alt="logo del Ecommerce">
             </a>
             <div class="user-navbar">
-                <div class="user-navbar__cart-icon-container">
+                <div class="user-navbar__cart-icon-container" data-count="8">
                     <i class="fa-solid fa-cart-plus"></i>
                 </div>
                 <div class="user-navbar__user-avatar-container">
@@ -46,20 +46,20 @@
         </nav>
     </header>
     <!-- TODO: Implementar carousel en 2do modulo  -->
-    <main class="main">
+    <main class="main" id="home">
         <section class="section-cards">
             <header class="section-cards__header">
                 <div class="section-cards__title-container">
                 <h1 class="section-cards__title">
-                    Lorem ipsum dolor sit amet.
+                    Fit World
                 </h1>
                 <p class="section-cards__subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta magni illo earum reiciendis est.
+                    La tienda número 1 de indumentaria deportiva masculina.
                 </p>
                 </div>
                 <div class="section-cards__products-search-container">
                     <div class="product-search">
-                        <label for="" class="product-search__label">Buscar</label>
+                        <label for="" class="product-search__label">Buscar en esta página</label>
                         <input type="text" class="product-search__input">
                         <button class="product-search__btn">Buscar</button>
                     </div>
@@ -75,25 +75,35 @@
             <div class="cards-container">
                 <article class="card">
                     <div class="card__header">
-                        <img src="#" alt="product image" class="card__img">
+                        <img src="/assets/images/remera-negra.jpg" alt="product image" class="card__img">
                     </div>
                     <div class="card__body">
                         <div class="card__title">
-                            PRODUCT NAME
+                            Remera deportiva gimnasio
                         </div>
-                        <p class="card__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta aut magni unde quibusdam deleniti provident, at facilis eligendi quod doloribus.
-                        </p>
-                        <div class="card__price">
-                            $ XXXXX
+                        <div class="card__description">
+                            Deportes recomendados: Padel-Tenis-Futbol-Running-Crossfit-etc <br>
+                            Género: Hombre <br>
+                            Material: Microfibra de poliéster <br>
+                            Tipo de cuello: Redondo c/detalle corte <br>
+                            Este tejido absorbe perfectamente el sudor y hace que te mantengas seco y cómodo. <br>
+                            Colores: Según Stock
+                        </div>
+                        <div class="card__more">
+                            <div class="card__date">
+                                19/01/2023
+                            </div>
+                            <div class="card__price">
+                                $ 2.350
+                            </div>
                         </div>
                     </div>
                     <div class="card__footer">
-                        <div class="card__date">
-                            13/12/2022
-                        </div>
                         <div class="card__btn-container">
-                            <a class="card__btn" href="#">
+                            <a class="card__btn-compra" href="#">
+                                Comprar
+                            </a>
+                            <a class="card__btn-detalle" href="#">
                                 Detalle
                             </a>
                         </div>
@@ -101,25 +111,44 @@
                 </article>
                 <article class="card">
                     <div class="card__header">
-                        <img src="#" alt="product image" class="card__img">
+                        <img src="/assets/images/manga-larga-negra.jpg" alt="product image" class="card__img">
                     </div>
                     <div class="card__body">
                         <div class="card__title">
-                            PRODUCT NAME
+                            Remera manga larga Heat
                         </div>
-                        <p class="card__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta aut magni unde quibusdam deleniti provident, at facilis eligendi quod doloribus.
-                        </p>
-                        <div class="card__price">
-                            $ XXXXX
+                        <div class="card__description">
+                            <p>
+                                Deportes recomendados: Fútbol,Running <br>
+                                Género: Hombre<br>
+                                Material: Poliéster<br>
+                                Tipo de cuello: Redondo<br>
+                                Confeccionada en poliester con elastano.<br>
+                                100% poliester<br>
+                                Ayuda a mantener la temperatura corporal.<br>
+                                Mejora el rendimiento en el entrenamiento.<br>
+                                Competición y recuperación.<br>
+                                Reduce la fatiga muscular.<br>
+                                Mejora la circulación.<br>
+                                Elimina la humedad corporal.<br>
+
+                            </p>
+                        </div>
+                        <div class="card__more">
+                            <div class="card__date">
+                                13/12/2022
+                            </div>
+                            <div class="card__price">
+                                $ 3.219
+                            </div>
                         </div>
                     </div>
                     <div class="card__footer">
-                        <div class="card__date">
-                            13/12/2022
-                        </div>
                         <div class="card__btn-container">
-                            <a class="card__btn" href="#">
+                            <a class="card__btn-compra" href="#">
+                                Comprar
+                            </a>
+                            <a class="card__btn-detalle" href="#">
                                 Detalle
                             </a>
                         </div>
@@ -127,25 +156,38 @@
                 </article>
                 <article class="card">
                     <div class="card__header">
-                        <img src="#" alt="product image" class="card__img">
+                        <img src="/assets/images/remera-musculosa-negra.jpg" alt="product image" class="card__img">
                     </div>
                     <div class="card__body">
                         <div class="card__title">
-                            PRODUCT NAME
+                            Pechera pro selection
                         </div>
-                        <p class="card__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta aut magni unde quibusdam deleniti provident, at facilis eligendi quod doloribus.
-                        </p>
-                        <div class="card__price">
-                            $ XXXXX
+                        <div class="card__description">
+                            <p>
+                                Género: Hombre<br>
+                                Material: Poliéster<br>
+                                Tipo de cuello: Redondo<br>
+                                Remera Deportiva Sublimable - Excelente calce y confección.<br>
+                                Material: Set de Poliéster de primera calidad.<br>
+                                Corte: Regular fit (corte normal)<br>
+                                Ideales para entrenar. Todas las disciplinas, tanto outdoor como indoor.<br>
+                            </p>
+                        </div>
+                        <div class="card__more">
+                            <div class="card__date">
+                                13/12/2022
+                            </div>
+                            <div class="card__price">
+                                $ 1.215
+                            </div>
                         </div>
                     </div>
                     <div class="card__footer">
-                        <div class="card__date">
-                            13/12/2022
-                        </div>
                         <div class="card__btn-container">
-                            <a class="card__btn" href="#">
+                            <a class="card__btn-compra" href="#">
+                                Comprar
+                            </a>
+                            <a class="card__btn-detalle" href="#">
                                 Detalle
                             </a>
                         </div>
@@ -153,25 +195,366 @@
                 </article>
                 <article class="card">
                     <div class="card__header">
-                        <img src="#" alt="product image" class="card__img">
+                        <img src="/assets/images/short-gris.jpg" alt="product image" class="card__img">
                     </div>
                     <div class="card__body">
                         <div class="card__title">
-                            PRODUCT NAME
+                            Short pro elite
                         </div>
-                        <p class="card__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta aut magni unde quibusdam deleniti provident, at facilis eligendi quod doloribus.
-                        </p>
-                        <div class="card__price">
-                            $ XXXXX
+                        <div class="card__description">
+                            <p>
+                                Sirven para toda disciplina deportiva. entranamiento funcional, running, ciclismo, futbol, basquet, voley y mucho mas. <br>
+                                Género: Hombre <br>
+                                Composición: Poliéster <br>
+                                Material principal: Poliéster <br>
+                                Tipo de short: Short <br>
+                                <br>
+                                - Confeccionadas en set de Poliester de primera calidad. <br>
+                                - Con elástico y cordon ajustable. <br>
+                                - Cómodos y frescos. <br>
+                                - Utiles tanto para actividades indoor como outdoor. <br>
+                                <br>
+                                Modelos íntegramente de poliester.
+                            </p>
+                        </div>
+                        <div class="card__more">
+                            <div class="card__date">
+                                13/12/2022
+                            </div>
+                            <div class="card__price">
+                                $ 5.250
+                            </div>
                         </div>
                     </div>
                     <div class="card__footer">
-                        <div class="card__date">
-                            13/12/2022
-                        </div>
                         <div class="card__btn-container">
-                            <a class="card__btn" href="#">
+                            <a class="card__btn-compra" href="#">
+                                Comprar
+                            </a>
+                            <a class="card__btn-detalle" href="#">
+                                Detalle
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="/assets/images/short-negro.jpg" alt="product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Short gold black
+                        </div>
+                        <div class="card__description">
+                            <p>
+                                Género: Hombre <br>
+                                Composición: Composición algodón <br>
+                                Material principal: Algodón <br>
+                                Tipo de short: Short <br>
+                                <br>
+                                Shorts bermuda de hombre deportivo corto ideal gimnasio en rústico de algodón liviano tipo jogging. <br>
+                                *Con cintura ajustable. <br>
+                                *Bolsillos y costuras reforzadas. <br>
+                                *Cordón para ajustar
+                            </p>
+                        </div>
+                        <div class="card__more">
+                            <div class="card__date">
+                                13/12/2022
+                            </div>
+                            <div class="card__price">
+                                $ 1.290
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__btn-container">
+                            <a class="card__btn-compra" href="#">
+                                Comprar
+                            </a>
+                            <a class="card__btn-detalle" href="#">
+                                Detalle
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card article">
+                    <div class="card__header">
+                        <img src="/assets/images/short-blanco.jpg" alt="product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Short gold white
+                        </div>
+                        <div class="card__description">
+                            <p>
+                                Género: Hombre <br>
+                                Composición: Composición algodón <br>
+                                Material principal: Algodón <br>
+                                Tipo de short: Short <br>
+                                <br>
+                                Shorts bermuda de hombre deportivo corto ideal gimnasio en rústico de algodón liviano tipo jogging. <br>
+                                *Con cintura ajustable. <br>
+                                *Bolsillos y costuras reforzadas. <br>
+                                *Cordón para ajustar
+                            </p>
+                        </div>
+                        <div class="card__more">
+                            <div class="card__date">
+                                13/12/2022
+                            </div>
+                            <div class="card__price">
+                                $ 1.450
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__btn-container">
+                            <a class="card__btn-compra" href="#">
+                                Comprar
+                            </a>
+                            <a class="card__btn-detalle" href="#">
+                                Detalle
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card article">
+                    <div class="card__header">
+                        <img src="/assets/images/jogging-franjas-blancas.jpg" alt="product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Joggings hombre chupin pantalon deportivo 
+                        </div>
+                        <div class="card__description">
+                            <p>
+                                Material principal: Poliéster <br>
+                                Tipo de pantalón: Joggings <br>
+                                Tiro del pantalón: Tiro medio <br>
+                                Corte del pantalón: Chupín <br>
+                                Temporada de lanzamiento: Primavera/Verano <br>
+                                Cantidad de bolsillos: 2 <br>
+                                Con puños ajustables: No <br>
+                                Con bolsillos: Sí <br>
+                                <br>
+                                Confeccionadas con poliester de primera calidad. <br>
+                                Ideales para uso diario y para realizar cualquier tipo de actividad deportiva.<br>
+                                Excelentes terminaciones. <br>
+                                Ideales para media estación. <br>
+                                Viene con bolsillos laterales (no tiene bolsillo atrás).<br>
+                                Puño elastizado.<br>
+                                Elástico en la cintura.<br>
+                                Cordón ajustable para adaptarlo como mas te guste.
+                            </p>
+                        </div>
+                        <div class="card__more">
+                            <div class="card__date">
+                                13/12/2022
+                            </div>
+                            <div class="card__price">
+                                $ 2.517,50
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__btn-container">
+                            <a class="card__btn-compra" href="#">
+                                Comprar
+                            </a>
+                            <a class="card__btn-detalle" href="#">
+                                Detalle
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="/assets/images/jogging-negro.jpg" alt="product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Jogging take it easy
+                        </div>
+                        <p class="card__description">
+                            Material principal: Set de poliester<br>
+                            Tipo de pantalón: Joggings<br>
+                            Tiro del pantalón: Tiro medio<br>
+                            Corte del pantalón: Entallado<br>
+                            Temporada de lanzamiento: Primavera/Verano<br>
+                            Cantidad de bolsillos: 2<br>
+                            Con bolsillos: No<br>
+                            Joggins - Excelente calce y confección.<br>
+                            Material: Set de poliéster de primera calidad (media estación).<br>
+                        </p>
+                        <div class="card__more">
+                            <div class="card__date">
+                                13/12/2022
+                            </div>
+                            <div class="card__price">
+                                $ 5.490
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__btn-container">
+                            <a class="card__btn-compra" href="#">
+                                Comprar
+                            </a>
+                            <a class="card__btn-detalle" href="#">
+                                Detalle
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="/assets/images/jogging-babucha-gris.jpg" alt="product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Joggin hombre pantalon yogin babucha
+                        </div>
+                        <p class="card__description">
+                            Material principal: Algodon Rustico Peinado Premium <br>
+                            Tipo de pantalón: Cargo <br>
+                            Tiro del pantalón: Tiro medio <br>
+                            Corte del pantalón: Chupín <br>
+                            Temporada de lanzamiento: Primavera/Verano <br>
+                            Cantidad de bolsillos: 2 <br>
+                            Con puños ajustables: Sí <br>
+                            Con bolsillos: Sí <br>
+                            <br>
+                            Elaborado: tela Algodón Rustico Peinado Premium. <br>
+                            Cintura con elástico y cordón alrededor de la cintura, hecho con maquinas OVERLOCK DE 4 HILOS y COLLARETA y reforzado con recta en la parte trasera y delantera.
+                        </p>
+                        <div class="card__more">
+                            <div class="card__date">
+                                13/12/2022
+                            </div>
+                            <div class="card__price">
+                                $ 4.291
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__btn-container">
+                            <a class="card__btn-compra" href="#">
+                                Comprar
+                            </a>
+                            <a class="card__btn-detalle" href="#">
+                                Detalle
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="/assets/images/mochila-running-treking.jpg" alt="product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Bolso deportivo Gadnic riñonera 
+                        </div>
+                        <p class="card__description">
+                            Este modelo es ideal para quienes buscan un bolso pequeño, liviano pero con gran capacidad de guardado.<br>
+                            <br>
+                            Diseño a un hombro:<br>
+                            Su diseño te permitirá llevarla con su tira única a un hombro, guardando con seguridad tus pertenencias, o bien podrás llevarla cruzada.<br>
+                            <br>
+                            Liviana y ergonómica:<br>
+                            No solo es un bolso con un diseño innovador, también es ideal para deportes y viajes por su comodidad.<br>
+                        </p>
+                        <div class="card__more">
+                            <div class="card__date">
+                                13/12/2022
+                            </div>
+                            <div class="card__price">
+                                $ 5.410
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__btn-container">
+                            <a class="card__btn-compra" href="#">
+                                Comprar
+                            </a>
+                            <a class="card__btn-detalle" href="#">
+                                Detalle
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="/assets/images/riñonera-unisex.jpg" alt="product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Riñonera flexible deportiva
+                        </div>
+                        <div class="card__description">
+                            <p>
+                                > Posee 1 compartimiento central principal amplio<br>
+                                > Salida para auriculares<br>
+                                > Tira cierres de excelente calidad<br>
+                                > Costuras primera calidad y durabilidad<br>
+                                > Medidas : alto:9 cm / Ancho:22cm
+                            </p>
+                        </div>
+                        <div class="card__more">
+                            <div class="card__date">
+                                13/12/2022
+                            </div>
+                            <div class="card__price">
+                                $ 4.300
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__btn-container">
+                            <a class="card__btn-compra" href="#">
+                                Comprar
+                            </a>
+                            <a class="card__btn-detalle" href="#">
+                                Detalle
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="/assets/images/anteojos-polarizados-ciclismo.jpg" alt="product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            Anteojos polarizados Kunnan 
+                        </div>
+                        <div class="card__description">
+                            <p>
+                                - Protección 100% UVA / UVB con claridad sin distorsión <br>
+                                - POLARIZADO 0.8 mm <br>
+                                - Lente color negro. <br>
+                                - Uso deportivo y náutico. Ideal para pescadores. <br>
+                                - Estuche rígido con cierre y cleaner. <br>
+                                - Para usar sobre anteojos con aumento. <br>
+                            </p>
+                        </div>
+                        <div class="card__more">
+                            <div class="card__date">
+                                13/12/2022
+                            </div>
+                            <div class="card__price">
+                                $ 8.200
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__btn-container">
+                            <a class="card__btn-compra" href="#">
+                                Comprar
+                            </a>
+                            <a class="card__btn-detalle" href="#">
                                 Detalle
                             </a>
                         </div>
@@ -180,10 +563,13 @@
             </div>
         </section>
     </main>
-    <div class="whatssap-container">
-        <a href="" class="whatssap-container__link">
-            <img src="#" alt="whatssap contact link" class="whatssap-container__img">
+    <div class="botton-container">
+        <a href="https://walink.co/cb63db" target="_blank" class="botton-container__link">
+            <img src="https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful/2048/5302_-_Whatsapp-512.png" alt="whatssap contact link" class="whatssap-container__img">
         </a>
+        <a class="go-top" href="#home">
+            <i class="fa-solid fa-circle-up">
+            </i>
     </div>
     <footer class="footer">
         <div class="footer__column">
@@ -209,12 +595,12 @@
             </ul>
         </div>
         <div class="footer__column">
-            <img src="/assets/images/Argentina.png" alt="company logo" class="footer__logo" width="50">
+            <img src="/assets/images/logo.png" alt="company logo" class="footer__logo" width="100">
             <h2 class="footer__company-name">
-                NOMBRE DE LA EMPRESA
+                World Fit
             </h2>
             <p class="footer__copyright">
-                Todos los derechos reservados a Lezca
+                Todos los derechos reservados a OLezca95
             </p>
         </div>
         <div class="footer__column">

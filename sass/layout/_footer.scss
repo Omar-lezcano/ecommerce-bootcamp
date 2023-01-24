@@ -1,6 +1,8 @@
 .footer {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin-top: auto;
     background-color: $color-dark-gray;
     &__column {
         padding: 1rem 1.5rem;
@@ -10,7 +12,7 @@
     }
 
     &__contact-link {
-        color: white;
+        color: $color-text-light;
         padding: .25rem;
         display: flex;
         align-items: center;
@@ -35,6 +37,12 @@
 @media screen and(min-width: 600px) {
     .footer {
         flex-direction: row;
+        justify-content: center;
+
+        &__column {
+            text-align: center;
+        }
     }
+    
     
 }

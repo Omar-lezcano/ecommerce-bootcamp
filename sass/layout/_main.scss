@@ -1,5 +1,234 @@
 .main {
     margin-top: 50px;
     padding: 1.5rem 0;
-    background-color: aliceblue;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.form {
+    background-color: rgba(0, 0, 0, .6);
+    width: 50%;
+    margin: auto;
+    padding: 20px 10px 20px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    // position: relative;
+    overflow: hidden;
+    flex-direction: row;
+
+    &__title {
+        font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: $color-bg-warning;
+    text-align: center;
+    padding: 14px 0;
+    }
+
+    span {
+        color: $color-text-light;
+    }
+
+    &__label {
+        display: block;
+        color: $color-bg-warning;
+        font-size: 16px;
+        font-family: Roboto;
+    }
+
+    &__input {
+        background-color: rgba(0, 0, 0, .7);
+        border: none;
+        outline: none;
+        border-bottom: 2px solid $color-bg-warning;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        font-size: 14px;
+        color: $color-text-light;
+        font-family: Roboto;
+    }
+
+    &__textarea {
+        background-color: rgba(0, 0, 0, .7);
+        border: none;
+        outline: none;
+        border-bottom: 2px solid $color-bg-warning;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        font-size: 14px;
+        color: $color-text-light;
+        font-family: Roboto;
+        resize: vertical;
+        max-height: 150px;
+        min-width: 50px;
+    }
+}
+
+.btn {
+    &__submit {
+        background-color: $color-bg-warning;
+        font-family: Roboto;
+        border-radius: 3px;
+        outline: none;
+        font-size: 16px;
+        border: none;
+        color: $color-text-light;
+        padding: 10px 5px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+    }
+}
+
+.btn__submit:hover {
+    background-color: #ff9500;
+    transform: scale(1.2);
+    transition: .3s ease-in-out;
+}
+
+.iframe {
+    background-color: rgba(0, 0, 0, .6);
+    width: 50%;
+    margin: auto;
+    padding: 20px 10px 20px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    overflow: hidden;
+    flex-direction: row;
+
+    &__title {
+        font-weight: normal;
+        font-family: 'Courier New', Courier, monospace;
+        color: $color-bg-warning;
+        text-align: center;
+        padding: 14px 0;
+    }
+
+    span {
+        color: $color-text-light;
+    }
+
+    &.map {
+    overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .container .container__divs {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
+
+.info {
+    background-color: rgba(0, 0, 0, .6);
+    width: 50%;
+    margin: auto;
+    padding: 20px 10px 20px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    // position: relative;
+    overflow: hidden;
+    flex-direction: row;
+
+    &__title {
+        font-weight: normal;
+        font-family: 'Courier New', Courier, monospace;
+        color: $color-bg-warning;
+        text-align: center;
+        padding: 14px 0;
+    }
+
+    span {
+        color: $color-text-light;
+    }
+}
+
+
+.register {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 70%;
+    margin: auto;
+    padding: 20px 10px 20px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    overflow: hidden;
+    object-fit: cover;
+    flex-direction: row;
+    &__field {
+        color: $color-text-light;
+        margin-bottom: 10px;
+        }
+    &__terms-conditions {
+        justify-content: space-between;
+        color: $color-text-light;
+        margin-bottom: 1rem;
+        }
+}
+
+#id {
+width: 15px;
+height: 15px;
+font-size: 0.5rem;
+margin: 1rem 0.5rem;
+text-align: center;
+color: $color-text-light;
+}
+
+#checkbox {
+width: 20px;
+height: 15px;
+margin: 1rem 0.5rem;
+}
+
+#bornDateInput {
+background-color: rgb(66, 50, 19);
+}
+
+@media screen and (max-width: 750px) {
+#id {
+    display: flex;  
+}
+}
+
+.about-us {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: auto;
+    padding: 20px 10px 20px 20px;
+    border-radius: 3px;
+    overflow: hidden;
+    flex-direction: row;
+    width: 70%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    &__title {
+        font-weight: normal;
+        font-family: "Courier New", Courier, monospace;
+        color: $color-bg-warning;
+        text-align: center;
+        padding: 14px 0;
+        }
+    &__description {
+    overflow: hidden;
+    color: $color-text-light;
+    font-family: roboto;
+    }
+}
+.about-us:hover {
+box-shadow: 5px 5px 10px $color-bg-shadows, -5px -5px 10px $color-bg-shadows;
+transition: .3s ease-in-out;
+}
+.about-us span {
+color: $color-text-light;
 }

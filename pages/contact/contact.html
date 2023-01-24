@@ -5,9 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <h1>Contacto</h1>
+<body class="contact">
+    <header class="header">
+        <nav class="navbar">
+            <a href="/index.html">
+                <img class="navbar__logo" src="/assets/images/logo.png" alt="logo del Ecommerce">
+            </a>
+            <div class="user-navbar">
+                <div class="user-navbar__cart-icon-container">
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <div class="user-navbar__user-avatar-container">
+                    <img class="user-navbar__user-avatar" src="https://www.computerhope.com/jargon/g/guest-user.png" alt="Imagen de usuario" >
+                </div>
+                <!-- TODO: avatar de la persona logueada o nombre  -->
+            </div>
+
+            <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
+            <label for="menu-btn" class="navbar__menu-label">
+                <span class="navbar__menu-icon"></span>
+            </label>
+
+            <ul class="navbar__nav-links-container">
+                <li class="navbar__nav-item">
+                    <a href="/index.html" class="navbar__nav-link">Inicio</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/register/register.html" class="navbar__nav-link">Registro</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" id="home">
+        <main class="container__divs">
+            <form action="" class="form">
+                <div class="form__header">
+                    <h1 class="form__title">C<span>ontactanos!</span></h1>
+                </div>
+
+                <label for="idInputName" class="form__label"> Nombre y Apellido</label>
+                <input type="text" id="idInputName" class="form__input" placeholder="Quentin Tarantino">
+
+                <label for="emailInput" class="form__label"> Email</label>
+                <input type="email" id="emailInput" class="form__input" placeholder="nombre@ejemplo.com" required minlength="8" maxlength="45" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+                <label for="message" class="form__label"> Consulta</label>
+                <textarea name="" id="message" cols="" rows="" class="form__textarea" placeholder="Escribe tu consulta"></textarea>
+                <!-- <textarea name="description" id="" class="form__textarea" placeholder="Escribe tu consulta"> -->
+
+                <!-- <button type="submit" class="submit" value="Enviar"></button> -->
+                <input type="submit" class="btn__submit" value="Enviar">
+
+            </form>
+            
+            <div class="iframe">
+                <div class="iframe__header">
+                    <h1 class="iframe__title">V<span>isítanos!</span></h1>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1052.486020447648!2d-58.84797174581016!3d-27.465308818983193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456cb759536285%3A0x9405d9e6bbb5b145!2sCostanera%20Corrientes!5e0!3m2!1ses-419!2sar!4v1674528730259!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="botton-container">
+        <a href="https://walink.co/cb63db" target="_blank" class="botton-container__link">
+            <img src="https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful/2048/5302_-_Whatsapp-512.png" alt="whatssap contact link" class="whatssap-container__img">
+        </a>
+        <a class="go-top" href="#home">
+            <i class="fa-solid fa-circle-up">
+            </i>
+    </div>
+    <footer class="footer">
+        <div class="footer__column">
+            <ul class="footer__contact-container">
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">
+                        <i class="fa-brands fa-facebook footer__contact-icon footer__contact-icon--facebook"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">
+                        <i class="fa-brands fa-instagram footer__contact-icon footer__contact-icon--instagram"></i>
+                        Instagram
+                    </a>
+                </li>
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">
+                        <i class="fa-brands fa-linkedin footer__contact-icon footer__contact-icon--linkedin"></i>
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <img src="/assets/images/logo.png" alt="company logo" class="footer__logo" width="100">
+            <h2 class="footer__company-name">
+                World Fit
+            </h2>
+            <p class="footer__copyright">
+                Todos los derechos reservados a OLezca95
+            </p>
+        </div>
+        <div class="footer__column">
+            <ul class="footer__contact-container">
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">
+                        <i class="fa-solid fa-phone footer__contact-icon"></i>
+                        Telefono
+                    </a>
+                </li>
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">
+                        <i class="fa-solid fa-location-dot footer__contact-icon"></i>
+                        Localización
+                    </a>
+                </li>
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">
+                        <i class="fa-solid fa-envelope footer__contact-icon"></i>
+                        Email
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    
+    
     
 </body>
 </html>

@@ -1,16 +1,20 @@
 .footer {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-top: auto;
+    align-items: center;
     background-color: $color-dark-gray;
     &__column {
         padding: 1rem 1.5rem;
+        justify-content: center;
+        text-align: center;
     }
     &__contact-item {
         list-style: none;
+        padding: 10px 0;
     }
-
+    &__copyright {
+        color: #fff;
+    }
     &__contact-link {
         color: $color-text-light;
         padding: .25rem;
@@ -19,8 +23,13 @@
         gap: .5rem;
         
     }
+    &__logo {
+        width: 60px;
+        height: auto;
+        margin-bottom: 10px;
+    }
     &__contact-icon {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         &--facebook {
             color: #0035bb;
         }   
@@ -37,12 +46,21 @@
 @media screen and(min-width: 600px) {
     .footer {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
 
         &__column {
-            text-align: center;
+            margin: 1rem auto;
+            padding: 10px;
+        }
+        &__contact-icon {
+            font-size: 30px;
+        }
+        &__logo {
+            width: 120px;
+            height: 120px;
         }
     }
-    
-    
+    .media {
+        margin-bottom: 50px;
+    }
 }

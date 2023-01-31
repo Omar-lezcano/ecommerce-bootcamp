@@ -64,9 +64,8 @@ body {
 }
 .card__body {
   padding: 1rem;
-  background-color: #e6eaee;  /*------------- PONER EN SASS */
+  background-color: #e6eaee; 
   overflow: hidden;
-  /* object-fit: cover; */
 }
 
 .card__title {
@@ -75,8 +74,6 @@ body {
   border-bottom: 2px solid #ff851b;
   height: 6rem;
   margin-bottom: 1rem;
-  /* overflow: hidden; */
-  /* object-fit: cover; */
 }
 .card__description {
   padding: 1.5rem 0 2rem;
@@ -314,14 +311,17 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #333;
 }
 .footer__column {
   padding: 1rem 1.5rem;
-  
+  justify-content: center;
+  text-align: center;
 }
 .footer__contact-item {
   list-style: none;
+  padding: 10px 0;
 }
 .footer__contact-link {
   color: #fff;
@@ -330,8 +330,13 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+.footer__logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
 .footer__contact-icon {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 .footer__contact-icon--facebook {
   color: #0035bb;
@@ -343,15 +348,32 @@ body {
   color: #0077b6;
 }
 
+.footer__copyright {
+  color: #fff;
+}
+
 @media screen and (min-width: 600px) {
   .footer {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
   .footer__column {
-    text-align: center;
+    margin: 1rem auto;
+    padding: 10px;
   }
-}
+  .footer__contact-icon {
+    font-size: 30px;
+  }
+  .media {
+    margin-bottom: 50px;
+  }
+
+  .footer__logo {
+    width: 120px;
+    height: 120px;
+  }
+}  
+
 .main {
   margin-top: 50px;
   padding: 1.5rem 0;
@@ -470,7 +492,7 @@ body {
   text-align: center;
   padding: 14px 0;
 }
-.iframe span, .about-us span {
+.iframe span, .about-us span, .form__title span {
   color: #fff;
 }
 .iframe.map, .about-us__description {
@@ -514,12 +536,16 @@ body {
   }
 }
 
-
 @media screen and (min-width: 600px) {
   .container .container__divs {
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form, .iframe {
+    width: 70%;
   }
 }
 .info {

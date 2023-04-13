@@ -47,23 +47,25 @@
     </header>
     <div class="container" id="home">
         <main class="container__divs">
-            <form action="" class="register">
+            <!-- form id="registerForm" -->
+            <form action="" class="register" id="registerForm">
                 <div class="form__header">
                     <h1 class="form__title">R<span>egistro de usuario</span></h1>
                 </div>
 
                 <label for="idInputName" class="form__label"> Nombre Completo</label>
-                <input type="text" id="idInputName" class="form__input" placeholder="Jose Francisco Perez">
+                <input type="text" id="idInputName" name="fullName" class="form__input" placeholder="Jose Francisco Perez">
 
                 <label for="emailInput" class="form__label"> Email</label>
-                <input type="email" id="emailInput" class="form__input" placeholder="example@email.com" required minlength="8" maxlength="45" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <input type="email" id="emailInput" class="form__input" name="email" placeholder="example@email.com" required minlength="8" maxlength="45" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
 
-                <label for="passwordInput" class="form__label">Contraseña</label>
-                <input type="password" class="form__input" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
-        
-                <label for="passwordInput" class="form__label">Repetir contraseña</label>
-                <input type="password" class="form__input" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
-
+                <label for="password" class="form__label">Contraseña</label>
+                <input type="password" name="password" class="form__input" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                
+                <!-- label for, id, name= password2 -->
+                <label for="password2" class="form__label">Repetir contraseña</label>
+                <input type="password" id="password2" name="password2" class="form__input" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                
                 <label for="ageInput" class="form__label">Edad</label> <br>
                 <input type="number" name="age" id="ageInput" class="form__input" required min="12" max="88" step="5">
 
@@ -335,7 +337,7 @@
                     <label for="">Acepto los términos y condiciones</label>
                 </div>
 
-                <input type="submit" class="btn__submit" value="Enviar">
+                <input id="registerSubmit" type="submit" class="btn__submit" value="Enviar">
             </form>
         </main>
     </div>
@@ -347,6 +349,7 @@
             <i class="fa-solid fa-circle-up">
             </i>
     </div>
+    <!-- -->
     <footer class="footer">
         <div class="footer__column media">
             <ul class="footer__contact-container">
@@ -402,5 +405,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="/js/register.js"></script>
 </body>
 </html>

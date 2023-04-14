@@ -21,12 +21,18 @@ loginForm.addEventListener("submit", (evt)=> {
     }) // { name, password, email, }
 
     if(!user || user.password != password.value) {  //si no existe el usuario
-        alert("Los datos ingresados no son correctos");
+        showAlert("Login incorrecto", "error")
         return; //para que corte 
     }
 
     localStorage.setItem("currentUser", JSON.stringify(user));
-        alert("Login correcto")//va a guardar los datos de usuario en LS
+    //TODO: insertar alerta custom
+        //va a guardar los datos de usuario en LS
+    showAlert("Login correcto te redireccionaremos en unos instantes...")
+
+    setTimeout(() => {
+        window.location.href ="/index.html"
+    }, 1500)
 
 });
     

@@ -15,11 +15,14 @@
                 <img class="navbar__logo" src="/assets/images/logo.png" alt="logo del Ecommerce">
             </a>
             <div class="user-navbar">
-                <div class="user-navbar__cart-icon-container" data-count="8">
+                <div class="user-navbar__cart-icon-container">
                     <i class="fa-solid fa-cart-plus"></i>
+                    <div class="user-navbar__cart-badge" id="cart-count">0</div>
                 </div>
                 <div class="user-navbar__user-avatar-container">
-                    <img class="user-navbar__user-avatar" src="https://www.computerhope.com/jargon/g/guest-user.png" alt="Imagen de usuario" >
+                    <a href="/pages/order/order.html">
+                        <img class="user-navbar__user-avatar" src="https://www.computerhope.com/jargon/g/guest-user.png" alt="Imagen de usuario" >
+                    </a>
                 </div>
                 <!-- TODO: avatar de la persona logueada o nombre  -->
             </div>
@@ -29,7 +32,7 @@
                 <span class="navbar__menu-icon"></span>
             </label>
 
-            <ul class="navbar__nav-links-container">
+            <ul class="navbar__nav-links-container" id="navbar-list">
                 <li class="navbar__nav-item">
                     <a href="/index.html" class="navbar__nav-link">Inicio</a>
                 </li>
@@ -75,9 +78,9 @@
             <h1 class="section-cards__category">
                 CATEGORÍA: OFERTAS
             </h1>
-            <div class="cards-container">
+            <div class="cards-container" id="card-container">
                 <article class="card">
-                    <div class="card__header">
+                    <!-- <div class="card__header">
                         <img src="/assets/images/remera-negra.jpg" alt="product image" class="card__img">
                     </div>
                     <div class="card__body">
@@ -109,7 +112,7 @@
                                 Detalle
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </article>
                 <article class="card">
                     <div class="card__header">
@@ -630,5 +633,7 @@
     </footer>
 
     <script src="/js/header.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/order.js"></script>
 </body>
 </html>

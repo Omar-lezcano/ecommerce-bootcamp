@@ -288,6 +288,20 @@ body {
 .user-navbar__cart-icon-container {
   color: #ff851b;
   font-size: 1.5rem;
+  margin-right: .5rem;
+  position: relative; /*Anotar en scss */
+}
+.user-navbar__cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  text-align: center;
 }
 
 .user-navbar__user-avatar:hover, .user-navbar__cart-icon-container:hover {
